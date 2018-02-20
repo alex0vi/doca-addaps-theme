@@ -30,7 +30,8 @@
     "react-dom": "^15.2.0",
     "react-immutable-proptypes": "^1.7.1",
     "react-marked-markdown": "^1.4.0",
-    "react-pure-render": "^1.0.2"
+    "react-pure-render": "^1.0.2",
+    "rimraf": "^2.6.2"
   },
   "peerDependencies": {
     "json-schema-example-loader": "^3.0.0"
