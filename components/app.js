@@ -12,7 +12,7 @@ class App extends Component {
   };
 
   render() {
-    const { schemas, config } = this.props;
+    const { schemas, config, introduction } = this.props;
 
     return (
       <div id="wrapper">
@@ -22,6 +22,7 @@ class App extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <h1>{config.title}</h1>
+                <div>{ introduction }</div>
                 {schemas
                   .filter(schema => !schema.get('cfHidden'))
                   .valueSeq()
