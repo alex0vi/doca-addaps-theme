@@ -22,7 +22,7 @@ class App extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <h1>{config.title}</h1>
-                <div>{ introduction }</div>
+                { introduction }
                 {schemas
                   .filter(schema => !schema.get('cfHidden'))
                   .valueSeq()
