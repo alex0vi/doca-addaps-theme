@@ -1,13 +1,13 @@
 {
-  "name": "doca-bootstrap-theme",
+  "name": "@addaps/doca-addaps-theme",
   "version": "1.0.0",
-  "description": "Doca theme using Twitter Bootstrap",
+  "description": "Doca theme using Twitter Bootstrap. Fork from https://github.com/cloudflare/doca-bootstrap-theme.git",
   "main": "index.js",
-  "author": "Vojtech Miksu <vojtech@miksu.cz>",
+  "author": "Alex Oviedo <alex@addaps.com>",
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cloudflare/doca-bootstrap-theme"
+    "url": "git+https://github.com/alex0vi/doca-addaps-theme.git"
   },
   "scripts": {
     "build": "npm run clean && mkdir -p build && babel components --out-dir build",
@@ -51,5 +51,12 @@
     "eslint-plugin-jsx-a11y": "^1.5.5",
     "eslint-plugin-react": "^5.1.1",
     "rimraf": "^2.5.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/alex0vi/doca-addaps-theme/issues"
+  },
+  "homepage": "https://github.com/alex0vi/doca-addaps-theme#readme",
+  "keywords": [
+    "documentation"
+  ]
 }
