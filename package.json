@@ -1,6 +1,6 @@
 {
   "name": "@addaps/doca-addaps-theme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Doca theme using Twitter Bootstrap. Fork from https://github.com/cloudflare/doca-bootstrap-theme.git",
   "main": "index.js",
   "author": "Alex Oviedo <alex@addaps.com>",
