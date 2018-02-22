@@ -12,7 +12,7 @@ class App extends Component {
   };
 
   render() {
-    const { schemas, config, introduction } = this.props;
+    const { schemas, config, Introduction, Errors } = this.props;
 
     return (
       <div id="wrapper">
@@ -21,8 +21,10 @@ class App extends Component {
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-12">
+                <img className="img-addaps" src="https://www.addaps.com/assets/img/logo_black.png"/>
                 <h1>{config.title}</h1>
-                { introduction }
+                 <Introduction />
+                 <Errors />
                 {schemas
                   .filter(schema => !schema.get('cfHidden'))
                   .valueSeq()
