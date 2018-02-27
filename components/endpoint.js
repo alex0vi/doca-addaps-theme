@@ -1,6 +1,7 @@
 const React = require('react');
 const ObjectDefinitionTable = require('./objectDefinitionTable');
 const MarkdownPreview = require('react-marked-markdown').MarkdownPreview;
+const FormatErrors = require('./formatErrors');
 const ImmutablePropTypes = require('react-immutable-proptypes');
 const Component = require('react-pure-render/component');
 
@@ -62,6 +63,15 @@ class Endpoint extends Component {
         <h4>Response</h4>
         <div>
           <pre>{link.get('response')}</pre>
+        </div>
+
+        <h4>Errors</h4>
+        <div>
+          <pre>
+            {
+                 (link.get('errors'))?link.get('errors').map( (val, index) => <FormatErrors key={index} errorName={ val } /> ): ''
+             }
+          </pre>
         </div>
       </section>
     );

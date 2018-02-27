@@ -113,6 +113,12 @@ class Sidebar extends Component {
             onChange={this.handleSearchChange}
           />
         </div>
+        <ul className="sidebar-nav">
+            <li className="sidebar-category">
+                <a href="#gettingStarted">Getting Started</a>
+                <a href="#addapsErrors">Errors</a>
+            </li>
+        </ul>
         {schemas.filter(schema => !schema.get('cfHidden')).valueSeq().map(schema =>
           (getLinks(schema.get('links'), search).count() > 0 ?
             <ul className="sidebar-nav" key={schema.get('id')}>
