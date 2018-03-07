@@ -2,7 +2,6 @@ const React = require('react');
 const Component = require('react-pure-render/component');
 const styles = {
     "addapsErrors": {
-        color: "",
         padding: "30px 0"
     }
 }
@@ -12,7 +11,8 @@ class AddapsErrors extends Component {
 
     render() {
 
-        return (<article className="section api-section">
+        return (
+            <article className="section api-section">
                 <h2 id="addapsErrors" style={ styles.addapsErrors }>
                     Errors
                 </h2>
@@ -22,6 +22,39 @@ class AddapsErrors extends Component {
                     </li>
                     <li id="errors/FORMAT_VALIDATION_ERROR">
                         FORMAT_VALIDATION_ERROR: Some format validation error in the body or url request
+                    </li>
+                    <li id="errors/INVALID_EMAIL_FORMAT">
+                        INVALID_EMAIL_FORMAT: The email is invalid
+                    </li>
+                    <li id="errors/EMAIL_DUPLICATE">
+                        EMAIL_DUPLICATE: The email already exists
+                    </li>
+                    <li id="errors/PATCH_BOARD_WRONG_FORMAT">
+                        PATCH_BOARD_WRONG_FORMAT: state and contents should come in pairs, and with the same length
+                    </li>
+                    <li id="errors/INVALID_ASPECT_RATIO">
+                        INVALID_ASPECT_RATIO: The image aspect ratio is not correct
+                    </li>
+                    <li id="errors/IMAGE_FORMAT_UNSUPPORTED">
+                        IMAGE_FORMAT_UNSUPPORTED: Image formats are not supported
+                    </li>
+                    <li id="errors/IMAGE_TOO_LARGE">
+                        IMAGE_TOO_LARGE: The maximum image size is 2 MB
+                    </li>
+                    <li id="errors/OLD_PASSWORD_INCORRECT">
+                        OLD_PASSWORD_INCORRECT: The old password is not correct
+                    </li>
+                    <li id="errors/NEW_PASSWORD_INCORRECT">
+                        NEW_PASSWORD_INCORRECT: The new password is not correct
+                    </li>
+                    <li id="errors/WRONG_CREDENTIALS">
+                        WRONG_CREDENTIALS: Check the email or password field
+                    </li>
+                    <li id="errors/WRONG_BOARD_REPORT_TYPE">
+                        WRONG_BOARD_REPORT_TYPE: Check the {"<type>"} field
+                    </li>
+                    <li id="errors/CAN_ONLY_SET_STAR_PERSONNAL_OR_PUBLIC_BOARD">
+                        CAN_ONLY_SET_STAR_PERSONNAL_OR_PUBLIC_BOARD: The board is not public and it not owned by this user neither
                     </li>
                 </ul>
             </article>

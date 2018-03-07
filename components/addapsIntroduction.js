@@ -3,7 +3,6 @@ const Component = require('react-pure-render/component');
 
 const styles = {
     "gettingStarted": {
-        color: "",
         padding: "30px 0"
     }
 }
