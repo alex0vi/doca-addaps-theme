@@ -56,6 +56,18 @@ class AddapsErrors extends Component {
                     <li id="errors/CAN_ONLY_SET_STAR_PERSONNAL_OR_PUBLIC_BOARD">
                         CAN_ONLY_SET_STAR_PERSONNAL_OR_PUBLIC_BOARD: The board is not public and it not owned by this user neither
                     </li>
+                    <li id="errors/CANNOT_OPENED_FOLDER_IN_TRASH">
+                        CANNOT_OPENED_FOLDER_IN_TRASH: Folder cannot be trash, you could restore if you want
+                    </li>
+                    <li id="errors/TOKEN_EXPIRED">
+                        TOKEN_EXPIRED: This token has expired
+                    </li>
+                    <li id="errors/TOKEN_EXPIRED_FOREVER">
+                        TOKEN_EXPIRED_FOREVER: Token can no longer be refreshed
+                    </li>
+                    <li id="errors/TOKEN_INVALID">
+                        TOKEN_INVALID: This token is not valid
+                    </li>
                 </ul>
             </article>
         );
