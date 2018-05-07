@@ -31,7 +31,7 @@ class AddapsIntroduction extends Component {
                 <p>
                     The endpoint "guest_mode_session" return accessToken and refreshToken like:
 
-                    {`{"data": ...,  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZXMiOlsiL2JvYXJkcy86aWQoWzAtOV0rKS5HRVQiLCIvYm9hcmRzLzppZChbMC05XSspL3B1YmxpY1VybC5HRVQiLCIvYm9hcmRzLzppZChbMC05XSspL3JlcG9ydC5QT1NUIiwiL2JvYXJkcy9yZXBvcnRUeXBlcy5HRVQiLCIvY291bnRyaWVzLkdFVCIsIi9kZWZhdWx0cy9xdWlja0xpbmtzLkdFVCIsIi9wb2lzLkdFVCIsIi9zZWFyY2hBdXRvQ29tcGxldGUuR0VUIiwiL3Nlc3Npb24uUE9TVCIsIi9zZXNzaW9uL2ZhY2Vib29rLlBPU1QiLCIvc2Vzc2lvbi9ndWVzdF9tb2RlX3Nlc3Npb24uR0VUIiwiL3NpZ251cC5QT1NUIiwiL3NpZ251cC9mYWNlYm9vay5QT1NUIiwiL3VzZXIvZmVlZHMvZGlzY292ZXIuR0VUIiwiL3VzZXJzLkdFVCIsIi91c2Vycy86aWQoWzAtOV0rKS5HRVQiXSwiaWF0IjoxNTI0NjQzMDM1fQ.2Sf-Tkz8uLNrIxBxFBaB4btEwRVM9a6VF-9eKQAR000", "refreshToken": null}`}.
+                    {`{"data": ...,  "accessToken": "eyJhbGciOiJIUzI1NiIsInR..........", "refreshToken": null}`}.
                 </p>
 
                 <h2 style={ styles.gettinStarted }>All requests should contain two headers:</h2>
